@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ogo.marcin.workshopstest</groupId>
-    <artifactId>jenkins-workshops</artifactId>
+    <artifactId>jenkins-workshops-test</artifactId>
     <version>0.1</version>
-    <name>jenkins-workshops</name>
-    <description>#APP_DESC</description>
-    <url>#URL</url>
+    <name>Jenkins workshops test</name>
+    <description>Example project for use during workshops about Jenkins</description>
+    <url>https://github.com/marcinogo/jenkins-workshops-test.git</url>
 
     <properties>
         <!-- https://maven.apache.org/general.html#encoding-warning -->
@@ -54,7 +54,7 @@
     </dependencies>
 
     <build>
-        <finalName>#name of the bundled project</finalName>
+        <finalName>Example-project</finalName>
         <!-- your plugins -->
         <plugins>
             <plugin>
@@ -87,7 +87,7 @@
                         <index>true</index>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>#FQN of your MainClass</mainClass>
+                            <mainClass>ogo.marcin.workshopstest.jenkinsworkshop.Example</mainClass>
                         </manifest>
                         <manifestEntries>
                             <mode>development</mode>
