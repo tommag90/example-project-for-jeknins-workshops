@@ -1,17 +1,13 @@
-package ogo.marcin.workshopstest.jenkinsworkshop;
+package com.epam.q3ap.jenkinsworkshops;
 
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-/**
- * @author Marcin Ogorzalek
- */
-
 public class ExampleTest {
 
   @Test
-  public void shouldPassWhenRunAndNotModified() {
+  void shouldPassWhenRunAndNotModified() {
     // Given
     // When
     // Then

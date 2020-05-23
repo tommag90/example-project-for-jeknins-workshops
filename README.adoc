@@ -1,3 +1,11 @@
-= About jenkins-workshops
+:icons: font
+:author: Marcin Ogorzalek
+:revnumber: 0.1
+= About Example project
 
-Test workshops about use of *Jenkins*.
+Example project for use during workshops about Jenkins.
+
+== Usage
+
+IMPORTANT: Anybody that participate in the workshops should makes fork
+of this project and works on his/her own *GitHub* repository.

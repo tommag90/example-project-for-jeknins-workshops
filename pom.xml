@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ogo.marcin.workshopstest</groupId>
-    <artifactId>jenkins-workshops-test</artifactId>
+    <groupId>com.epam.q3ap</groupId>
+    <artifactId>jenkins-workshops</artifactId>
     <version>0.1</version>
-    <name>Jenkins workshops test</name>
+    <name>Example project</name>
     <description>Example project for use during workshops about Jenkins</description>
-    <url>https://github.com/marcinogo/jenkins-workshops-test.git</url>
+    <url>https://github.com/java-academy/example-project-for-jeknins-workshops.git</url>
 
     <properties>
         <!-- https://maven.apache.org/general.html#encoding-warning -->
@@ -27,7 +27,6 @@
         
         <!-- dependency versions should go here, so below they can be omitted -->
         <version.dependency.testng>7.1.0</version.dependency.testng>
-        <version.dependency.log4j2>2.13.0</version.dependency.log4j2>
         
         <!-- plugin versions should go here, so below they can be omitted -->
         <version.plugin.maven.enforcer>3.0.0-M3</version.plugin.maven.enforcer>
@@ -44,12 +43,6 @@
             <artifactId>testng</artifactId>
             <version>${version.dependency.testng}</version>
             <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>${version.dependency.log4j2}</version>
         </dependency>
     </dependencies>
 
@@ -87,7 +80,7 @@
                         <index>true</index>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>ogo.marcin.workshopstest.jenkinsworkshop.Example</mainClass>
+                            <mainClass>com.epam.q3ap.jenkinsworkshops.Example</mainClass>
                         </manifest>
                         <manifestEntries>
                             <mode>development</mode>
