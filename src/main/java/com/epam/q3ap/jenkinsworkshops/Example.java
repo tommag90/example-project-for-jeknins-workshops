@@ -9,6 +9,6 @@ package com.epam.q3ap.jenkinsworkshops;
  */
 class Example {
   public static void main(String[] args) {
-    System.out.println("Hello again Jenkins world");
+    System.out.println("Hello again my Jenkins world");
   }
 }
