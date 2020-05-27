@@ -1,8 +1,5 @@
 node{
   stage ('Build') {
-
-    git url: 'https://github.com/cyrille-leclerc/multi-module-maven-project'
-
     withMaven(
         // Maven installation declared in the Jenkins "Global Tool Configuration"
         maven: 'MavenJenkins',
@@ -14,7 +11,7 @@ node{
         ) {
 
       // Run the maven build
-      bat "mvn clean verify"
+      bat "mvn --version"
 
     } // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs & SpotBugs reports...
   }
