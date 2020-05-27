@@ -1,10 +1,13 @@
 pipeline {
     agent any
-    options
-        buildDiscarder(logRotator(daysToKeepStr: '1', numToKeepStr: '5', artifactDaysToKeepStr: '2', artifactNumToKeepStr: '1')
-
     tools {
         maven 'MavenJenkins'
+    }
+
+    options {
+        steps {
+            buildDiscarder(logRotator(daysToKeepStr: '1', numToKeepStr: '5', artifactDaysToKeepStr: '2', artifactNumToKeepStr: '1')
+        }
     }
 
     stages {
