@@ -1,5 +1,5 @@
 node{
-  stage ('Build') {
+  stage ('env info') {
     withMaven(
         // Maven installation declared in the Jenkins "Global Tool Configuration"
         maven: 'MavenJenkins',
@@ -11,7 +11,7 @@ node{
         ) {
 
       // Run the maven build
-      bat "mvn --version"
+      bat "java --version"
 
     } // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs & SpotBugs reports...
   }
