@@ -15,4 +15,10 @@ node{
 
     } // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs & SpotBugs reports...
   }
+  stage ('build') {
+    steps{
+        bat "mvn compile"
+        bat "mvn package"
+    }
+  }
 }
