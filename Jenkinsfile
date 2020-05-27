@@ -16,5 +16,11 @@ pipeline {
                 bat 'mvn package'
             }
         }
+        stage('sleep') {
+            steps {
+                sleep(time: 1, unit: 'MINUTES')
+                echo('Hello world')
+            }
+        }
     }
 }
